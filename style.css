@@ -73,6 +73,7 @@ header {
 .nav-menu {
     display: flex;
     gap: 10px;
+    z-index: 1000;
 }
 
 .nav-link {
@@ -538,3 +539,4 @@ section {
     }
 
 }
+
