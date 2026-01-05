@@ -73,7 +73,6 @@ header {
 .nav-menu {
     display: flex;
     gap: 10px;
-    z-index: 1000;
 }
 
 .nav-link {
@@ -354,6 +353,7 @@ section {
         align-items: center;
         padding-top: 100px;
         transition: var(--transition);
+        z-index: 1000;
     }
 
     .nav-menu.active {
@@ -539,4 +539,5 @@ section {
     }
 
 }
+
 
