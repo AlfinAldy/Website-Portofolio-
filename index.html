@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfin - SMKN 2 Nganjuk</title>
+    <!-- link font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("hbR2WDptjKVPTJV82");
+        })();
+    </script>
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="navbar section-content">
+            <a href="#home" class="nav-logo" aria-label="Home">
+                <h2 class="logo-txt">Alfin</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times" aria-label="Close menu"></button>
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certificates" class="nav-link">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact Me</a>
+                </li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars" aria-label="Open menu"></button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero section -->
+        <section id="home" class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Mohammad Alfin Aldy Yansyah</h2>
+                    <h3 class="subtitle">Saya Bersekolah Di SMK Negeri 2 Nganjuk</h3>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nemo minus temporibus maiores molestias error, quis harum neque. Inventore facilis asperiores vel consequuntur ducimus quae laborum excepturi at maiores voluptatibus.
+                    </p>
+                    <div class="buttons">
+                        <a href="#contact" class="button contact-me">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="assets/gambar1.png" alt="Foto Profil Mohammad Alfin Aldy Yansyah" class="hero-image" onerror="this.src='assets/placeholder.png'">
+                </div>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section id="about" class="about-section">
+            <div class="section-content">
+                <img src="assets/alfin.jpg"
+                        alt="Foto Profil Alfin di About Section"
+                        class="about-image"
+                        onerror="this.src='assets/placeholder.png'">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-description">
+                    Saya adalah siswa SMK Negeri 2 Nganjuk yang tertarik dengan teknologi dan pengembangan web. Saya belajar HTML, CSS, JavaScript, dan framework lainnya untuk membangun aplikasi yang berguna.
+                </p>
+            </div>
+        </section>
+
+        <!-- skills section -->
+        <section id="skills" class="skills-section">
+            <div class="section-content">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js-square"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- certificates section -->
+        <section id="certificates" class="certificates-section">
+            <div class="section-content">
+                <h2 class="section-title">Certificates</h2>
+                <div class="certificates-list">
+                    <div class="certificate-item">
+                        <img src="assets/sertiv.png" alt="Sertifikat Latika 2025" onerror="this.src='assets/placeholder.png'">
+                        <h3>Sertifikat Latika 2025</h3>
+                        <p>Dari UPT.TIKP Dinas Pendidikan Provinsi Jawa Timur</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects section -->
+        <section id="projects" class="projects-section">
+            <div class="section-content">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <img src="assets/project1.png" alt="Screenshot Website Portofolio" onerror="this.src='assets/placeholder.png'">
+                        <h3>Aplikasi Penghitung Kata</h3>
+                        <p>Aplikasi kecil untuk menghitung kata</p>
+                        <a href="https://github.com/AlfinAldy/Penghitung-kata" class="button" target="_blank" aria-label="View Penghitung Kata project">View Project</a>  
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/project2.png" alt="Screenshot Aplikasi Kalkulator" onerror="this.src='assets/placeholder.png'">
+                        <h3>Aplikasi Kalkulator (PHP)</h3>
+                        <p>Kalkulator sederhana menggunakan PHP</p>
+                        <a href="https://github.com/AlfinAldy/Kalkulator" class="button" target="_blank" aria-label="View Kalkulator project">View Project</a>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/project3.png" alt="Screenshot Konverter Uang" onerror="this.src='assets/placeholder.png'">
+                        <h3>Konverter Uang (Python)</h3>
+                        <p>Konverter dollar ke rupiah dengan Python</p>
+                        <a href="https://github.com/AlfinAldy/konverter-uang-py" class="button" target="_blank" aria-label="View Konverter Uang project">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section -->
+        <section id="contact" class="contact-section">
+            <div class="section-content">
+                <h2 class="section-title">Contact Me</h2>
+                <form id="contact-form" class="contact-form" aria-label="Contact form">
+                    <input type="text" id="from_name" name="from_name" placeholder="Nama Anda" required aria-label="Your name">
+                    <input type="email" id="from_email" name="from_email" placeholder="Email Anda" required aria-label="Your email">
+                    <textarea id="message" name="message" placeholder="Pesan Anda" required aria-label="Your message"></textarea>
+                    <button type="submit" class="button" aria-label="Send message">Kirim</button>
+                </form>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:alfin.gamedev@gmail.com" aria-label="Email Alfin">alfin.gamedev@gmail.com</a></p>
+                    <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/alfnldy?igsh=dGZ2N2dpMWFwamky" target="_blank" aria-label="Instagram Alfin">Instagram</a></p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/AlfinAldy" target="_blank" aria-label="GitHub Alfin">GitHub</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
