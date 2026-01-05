@@ -15,12 +15,21 @@ menuCloseButton.addEventListener('click', () => {
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
+
         const targetId = link.getAttribute('href').substring(1);
         const targetSection = document.getElementById(targetId);
+
         if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth' });
+            const headerOffset = document.querySelector('header').offsetHeight;
+            const elementPosition = targetSection.offsetTop;
+            const offsetPosition = elementPosition - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
         }
-        // Tutup menu setelah klik (untuk mobile)
+
         navMenu.classList.remove('active');
     });
 });
@@ -39,4 +48,5 @@ contactForm.addEventListener('submit', function(event) {
       alert('Gagal mengirim pesan. Coba lagi.');  // Notifikasi error
       console.log('FAILED...', error);
     });
+
 });
