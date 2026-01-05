@@ -1,6 +1,10 @@
 /* import */
 @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@300;400;500;600;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* global */
 * {
     margin: 0;
@@ -532,4 +536,5 @@ section {
         font-size: 0.85rem;
         margin: 8px 0;
     }
+
 }
